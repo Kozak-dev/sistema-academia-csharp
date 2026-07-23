@@ -1,8 +1,8 @@
-   Sistema de Gerenciamento de Academia
+# Sistema de Gerenciamento de Academia
 
 Projeto desenvolvido em C# (.NET) utilizando Programação Orientada a Objetos.
 
-  Funcionalidades
+## Funcionalidades
 
 - Cadastro de alunos
 - Cadastro de personal trainers
@@ -15,7 +15,7 @@ Projeto desenvolvido em C# (.NET) utilizando Programação Orientada a Objetos.
 - Controle de presença
 - Relatórios administrativos
 
-  Conceitos utilizados
+## Conceitos utilizados
 
 - Encapsulamento
 - Herança
