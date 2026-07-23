@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SistemAcademia.Models
 {
-    public class Pessoa
+    abstract class Pessoa
     {
         public string Nome { get; private set;  }
         public string CPF { get; private set; }

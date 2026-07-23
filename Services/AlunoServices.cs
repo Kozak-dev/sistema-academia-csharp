@@ -12,7 +12,7 @@ namespace SistemAcademia.Services
 
         public void CadastrarAluno(Aluno aluno)
         {
-            foreach(Aluno al in alunos)
+            foreach(var al in alunos)
             {
                 if (al.CPF == aluno.CPF)
                 {
@@ -45,14 +45,15 @@ namespace SistemAcademia.Services
                 if (al.CPF == buscarAlunoCpf)
                 {
                     al.MostrarDados();
+                    return;
                 }
             }
             Console.WriteLine("Aluno não encontrado!");
         }
-        public void ExluirAlunoPorCpf(string exluirAlunoCpf)
+        public void ExcluirAlunoPorCpf(string exluirAlunoCpf)
         {
             Aluno? alunoEncontrado = null;
-            foreach (Aluno al in alunos)
+            foreach (var al in alunos)
             {
                 if(al.CPF == exluirAlunoCpf)
                 {
@@ -69,6 +70,19 @@ namespace SistemAcademia.Services
             {
                 Console.WriteLine("Aluno não encontrado!");
             }
+        }
+
+        public Aluno? ObterAlunoPorCpf(string cpfAluno)
+        {
+            
+            foreach (var al in alunos)
+            {
+                if(al.CPF == cpfAluno)
+                {
+                    return al;
+                }
+            }
+            return null;
         }
     }
 }

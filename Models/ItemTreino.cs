@@ -24,8 +24,8 @@ namespace SistemAcademia.Models
         public void MostrarItensTreino()
         {
             Console.WriteLine($"Nome do exercicio: {Exercicio?.Nome}");
-            Console.WriteLine($"{Series} x {Repeticões}\n ");
-            Console.WriteLine($"Tempo de descanso entre series: {Descanso} segunos ");
+            Console.WriteLine($"{Series} x {Repeticões} ");
+            Console.WriteLine($"Tempo de descanso entre series: {Descanso}");
             Console.WriteLine($"Observaçoes: {Observações} ");
 
 

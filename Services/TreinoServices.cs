@@ -78,7 +78,7 @@ namespace SistemAcademia.Services
                     foreach (ItemTreino item in tr.Itens)
                     {
                         item.MostrarItensTreino();
-                        Console.WriteLine("------------------------------------------------------\n");
+                        Console.WriteLine("------------------------------------------------------");
                     }
                 }
 
